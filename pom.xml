@@ -68,8 +68,8 @@
       <url>http://snapshots.repository.codehaus.org</url>
     </repository>
     <repository>
-      <id>Gluehloch-Repository-1</id>
-      <name>Gluehloch Repository</name>
+      <id>awtools</id>
+      <name>Andre Winklers AWTools Repository</name>
       <url>http://maven2.gluehloch.de</url>
     </repository>
     <repository>
