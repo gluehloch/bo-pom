@@ -28,12 +28,12 @@
 
   <scm>
     <connection>
-      scm:svn:https://svn.code.sf.net/p/betoffice/svn/main/trunk/betoffice-pom
+      scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom
     </connection>
     <developerConnection>
-      scm:svn:https://svn.code.sf.net/p/betoffice/svn/main/trunk/betoffice-pom
+      scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom
     </developerConnection>
-    <url>https://svn.code.sf.net/p/betoffice/svn/main/trunk/betoffice-pom</url>
+    <url>https://sourceforge.net/p/betoffice/_list/git</url>
   </scm>
 
   <repositories>
