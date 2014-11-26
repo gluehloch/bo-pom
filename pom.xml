@@ -6,7 +6,7 @@
   <parent>
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>1</version>
+    <version>2</version>
   </parent>
 
   <groupId>de.winkler.betoffice</groupId>
@@ -251,6 +251,8 @@
   </distributionManagement>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     <org.springframework.version>3.1.2.RELEASE</org.springframework.version>
     <!-- unitils -->
     <spring.version>3.1.2.RELEASE</spring.version>
