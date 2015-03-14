@@ -11,7 +11,7 @@
 
   <groupId>de.winkler.betoffice</groupId>
   <artifactId>betoffice-maven-parent</artifactId>
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.0</version>
 
   <name>Betoffice Parent POM</name>
   <packaging>pom</packaging>
@@ -269,9 +269,6 @@
  
   <properties>
     <org.springframework.version>3.1.2.RELEASE</org.springframework.version>
-    <!-- unitils
-    <spring.version>3.1.2.RELEASE</spring.version>
-    -->
   </properties>
 
 </project>
