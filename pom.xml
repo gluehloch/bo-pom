@@ -153,12 +153,9 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>3.6.8.Final</version>
-      <!-- <version>4.3.5.Final</version> -->
+      <version>${org.hibernate.version}</version>
       <scope>compile</scope>
     </dependency>
-    <!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-annotations</artifactId> 
-      <version>3.5.6-Final</version> <scope>compile</scope> </dependency> -->
 
     <!-- Springframework. -->
     <dependency>
@@ -192,17 +189,26 @@
       <artifactId>spring-jdbc</artifactId>
       <version>${org.springframework.version}</version>
     </dependency>
+    <!-- Not necessary any longer? 
     <dependency>
       <groupId>aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.5.3</version>
+    </dependency>
+    -->
+    
+    <!-- Java 8 and Hibernate 5 needs this -->
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.20.0-GA</version>
     </dependency>
 
     <!-- Testabteilung -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -268,7 +274,8 @@
   </repositories>
  
   <properties>
-    <org.springframework.version>3.1.2.RELEASE</org.springframework.version>
+    <org.springframework.version>4.3.1.RELEASE</org.springframework.version>
+    <org.hibernate.version>5.2.1.Final</org.hibernate.version>
   </properties>
 
 </project>
