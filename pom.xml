@@ -79,13 +79,6 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- Java 8 and Hibernate 5 needs this -->
-    <dependency>
-        <groupId>org.javassist</groupId>
-        <artifactId>javassist</artifactId>
-        <version>3.20.0-GA</version>
-    </dependency>
-
     <!-- Gluehloch Projekte. -->
     <dependency>
       <groupId>de.awtools</groupId>
@@ -149,6 +142,18 @@
       <scope>compile</scope>
     </dependency>
 
+    <!-- Java 8 and Hibernate 5 needs this -->
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.20.0-GA</version>
+    </dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.9</version>
+    </dependency>
+
     <!-- Fuer Hibernate -->
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -188,20 +193,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>${org.springframework.version}</version>
-    </dependency>
-    <!-- Not necessary any longer? 
-    <dependency>
-      <groupId>aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.5.3</version>
-    </dependency>
-    -->
-    
-    <!-- Java 8 and Hibernate 5 needs this -->
-    <dependency>
-        <groupId>org.javassist</groupId>
-        <artifactId>javassist</artifactId>
-        <version>3.20.0-GA</version>
     </dependency>
 
     <!-- Testabteilung -->
