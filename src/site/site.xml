@@ -22,9 +22,6 @@
       <item name="AWTools" href="http://www.gluehloch.de"/>
       <item name="Maven" href="http://maven.apache.org/"/>
     </links>
-    <head>
-      <meta name="project" content="betoffice parent pom"/>
-    </head>
 
     <menu name="Betoffice Parent POM">
       <item name="instruction leaflet" href="index.html"/>
