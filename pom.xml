@@ -250,7 +250,7 @@
     <repository>
       <id>betoffice-repository</id>
       <name>Betoffice Repository</name>
-      <url>http://maven-snap.gluehloch.de/repository</url>
+      <url>http://maven.gluehloch.de/repository</url>
       <releases>
         <enabled>true</enabled>
       </releases>
