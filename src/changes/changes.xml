@@ -10,7 +10,7 @@
     -->
     
     <!-- RELEAESED -->
-    <release version="betoffice-storage-1.4.0" date="2016-07-26"
+    <release version="betoffice-pom-1.4.0" date="2016-07-26"
       description="Reactivate site documentation">
       <action dev="andrewinkler" type="add" date="2016-07-13">
         Update to awtools master parent POM 1.3. Update to Springframework
@@ -18,7 +18,7 @@
       </action>
     </release>
 
-    <release version="betoffice-storage-1.3.0" date="2015-08-06"
+    <release version="betoffice-pom-1.3.0" date="2015-08-06"
       description="Reactivate site documentation">
       <action dev="andrewinkler" type="add" date="2015-01-19">
         Added project repository settings (Will be moved in the future
@@ -32,21 +32,21 @@
       </action>
     </release>
 
-    <release version="betoffice-storage-1.2.4" date="2014-07-27"
+    <release version="betoffice-pom-1.2.4" date="2014-07-27"
       description="Update">
       <action dev="andrewinkler" type="remove" date="2014-07-27">
         Removed unitils dependency.
       </action>
     </release>
 
-    <release version="betoffice-storage-1.2.3" date="2014-01-10"
+    <release version="betoffice-pom-1.2.3" date="2014-01-10"
       description="Update">
       <action dev="andrewinkler" type="update" date="2014-01-10">
         maven-surefire-plugin updated to version 2.16
       </action>
     </release>
 
-    <release version="betoffice-storage-1.2.1" date="2013-07-27"
+    <release version="betoffice-pom-1.2.1" date="2013-07-27"
       description="Bugfix">
       <action dev="andrewinkler" type="add" date="2013-07-27">
         awtools-basic 1.2.0
