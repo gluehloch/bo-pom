@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
@@ -6,12 +7,12 @@
   <parent>
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>3</version>
   </parent>
 
   <groupId>de.winkler.betoffice</groupId>
   <artifactId>betoffice-maven-parent</artifactId>
-  <version>1.4.0-SNAPSHOT</version>
+  <version>1.4.0</version>
 
   <name>Betoffice Parent POM</name>
   <packaging>pom</packaging>
@@ -79,13 +80,6 @@
       <scope>compile</scope>
     </dependency>
 
-    <dependency>
-      <groupId>javassist</groupId>
-      <artifactId>javassist</artifactId>
-      <version>3.11.0.GA</version>
-      <scope>compile</scope>
-    </dependency>
-
     <!-- Gluehloch Projekte. -->
     <dependency>
       <groupId>de.awtools</groupId>
@@ -149,16 +143,25 @@
       <scope>compile</scope>
     </dependency>
 
+    <!-- Java 8 and Hibernate 5 needs this -->
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.20.0-GA</version>
+    </dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.9</version>
+    </dependency>
+
     <!-- Fuer Hibernate -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>3.6.8.Final</version>
-      <!-- <version>4.3.5.Final</version> -->
+      <version>${org.hibernate.version}</version>
       <scope>compile</scope>
     </dependency>
-    <!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-annotations</artifactId> 
-      <version>3.5.6-Final</version> <scope>compile</scope> </dependency> -->
 
     <!-- Springframework. -->
     <dependency>
@@ -192,17 +195,12 @@
       <artifactId>spring-jdbc</artifactId>
       <version>${org.springframework.version}</version>
     </dependency>
-    <dependency>
-      <groupId>aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.5.3</version>
-    </dependency>
 
     <!-- Testabteilung -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -232,6 +230,16 @@
   </dependencies>
 
   <distributionManagement>
+    <repository>
+      <id>gluehloch-repository</id>
+      <name>Gluehloch AWTools Repository</name>
+      <url>scp://maven.gluehloch.de/var/www/maven.gluehloch/repository</url>
+    </repository>
+    <snapshotRepository>
+      <id>gluehloch-repository-snap</id>
+      <name>Gluehloch Snapshot Repository</name>
+      <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
+    </snapshotRepository>
     <site>
       <id>gluehloch-repository</id>
       <url>scp://maven.gluehloch.de/var/www/projects.gluehloch/betoffice/pom</url>
@@ -242,7 +250,7 @@
     <repository>
       <id>betoffice-repository</id>
       <name>Betoffice Repository</name>
-      <url>http://maven-snap.gluehloch.de/repository</url>
+      <url>http://maven.gluehloch.de/repository</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -266,9 +274,10 @@
       </snapshots>
     </repository>
   </repositories>
- 
+
   <properties>
-    <org.springframework.version>3.1.2.RELEASE</org.springframework.version>
+    <org.springframework.version>4.3.1.RELEASE</org.springframework.version>
+    <org.hibernate.version>5.2.1.Final</org.hibernate.version>
   </properties>
 
 </project>
