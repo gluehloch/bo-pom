@@ -11,7 +11,7 @@
     <release version="betoffice-pom-1.5.0" date="2017-??-??"
       description="Java 8">
       <action dev="andrewinkler" type="update" date="2017-04-08">
-        Java 8.
+        Java 8. Mockito 2.x.x.
       </action>
     </release>
     
