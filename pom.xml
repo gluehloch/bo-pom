@@ -12,7 +12,7 @@
 
   <groupId>de.winkler.betoffice</groupId>
   <artifactId>betoffice-maven-parent</artifactId>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
 
   <name>Betoffice Parent POM</name>
   <packaging>pom</packaging>
@@ -217,11 +217,10 @@
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <version>1.10.8</version>
+      <artifactId>mockito-core</artifactId>
+      <version>2.7.22</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>com.ibm.icu</groupId>
       <artifactId>icu4j</artifactId>
