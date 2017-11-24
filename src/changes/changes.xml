@@ -8,10 +8,18 @@
     <!--
          *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) ***
     -->
+    <release version="betoffice-pom-1.6.0" date="2017-11-24"
+      description="Java 8">
+      <action dev="andrewinkler" type="update" date="2017-11-24">
+        Reference to MASTER-POM version 5.
+      </action>
+    </release>
+
+    <!-- RELEASED -->
     <release version="betoffice-pom-1.5.0" date="2017-11-14"
       description="Java 8">
       <action dev="andrewinkler" type="update" date="2017-04-08">
-        Java 8. Mockito 2.x.x.
+        Java 8. Mockito 2.11.0.
       </action>
     </release>
     
