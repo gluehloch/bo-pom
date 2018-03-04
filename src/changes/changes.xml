@@ -8,14 +8,21 @@
     <!--
          *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) ***
     -->
-    <release version="betoffice-pom-1.6.0" date="2017-11-24"
+    <release version="betoffice-pom-1.6.0" date="2018-??-??"
       description="Java 8">
-      <action dev="andrewinkler" type="update" date="2017-11-24">
-        Reference to MASTER-POM version 5.
+      <action dev="andrewinkler" type="update" date="2018-03-04">
+        Reference to MASTER-POM version 5. Spring 5.0.3 and Hibernate 5.2.14.
       </action>
     </release>
 
     <!-- RELEASED -->
+    <release version="betoffice-pom-1.6.0" date="2017-11-24"
+      description="Java 8">
+      <action dev="andrewinkler" type="update" date="2017-11-24">
+        Reference to MASTER-POM version 4.
+      </action>
+    </release>
+
     <release version="betoffice-pom-1.5.0" date="2017-11-14"
       description="Java 8">
       <action dev="andrewinkler" type="update" date="2017-04-08">
