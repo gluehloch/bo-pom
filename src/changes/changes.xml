@@ -8,10 +8,13 @@
     <!--
          *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) ***
     -->
-    <release version="betoffice-pom-1.6.0" date="2018-??-??"
+    <release version="betoffice-pom-1.6.0" date="2018-03-31"
       description="Java 8">
       <action dev="andrewinkler" type="update" date="2018-03-04">
         Reference to MASTER-POM version 5. Spring 5.0.3 and Hibernate 5.2.14.
+      </action>
+      <action dev="andrewinkler" type="removed" date="2018-03-31">
+        Removed some dependencies: dom4j, activation and jaxen.
       </action>
     </release>
 
