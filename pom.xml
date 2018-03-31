@@ -80,14 +80,6 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- Gluehloch Projekte. -->
-    <dependency>
-      <groupId>de.awtools</groupId>
-      <artifactId>awtools-basic</artifactId>
-      <version>1.3.0</version>
-      <scope>compile</scope>
-    </dependency>
-
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
