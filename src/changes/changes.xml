@@ -8,7 +8,9 @@
     <!--
          *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) ***
     -->
-    <release version="betoffice-pom-1.8.0" date="2018-??-??"
+    
+    <!-- RELEASED -->
+    <release version="betoffice-pom-1.8.0" date="2018-05-11"
       description="Dependencies">
       <action dev="andrewinkler" type="removed" date="2018-04-01">
         Removed fest assert.
