@@ -1,97 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
-  <properties>
-    <title>Change Notes</title>
-    <author email="andre.winkler@web.de">Andre Winkler</author>
-  </properties>
-  <body>
-    <!--
-         *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) ***
-    -->
-    
-    <!-- RELEASED -->
-    <release version="betoffice-pom-1.8.0" date="2018-05-11"
-      description="Dependencies">
-      <action dev="andrewinkler" type="removed" date="2018-04-01">
-        Removed fest assert.
-      </action>
-    </release>    
-    
-    
-    <!-- RELEASED -->
-    <release version="betoffice-pom-1.7.0" date="2018-03-31"
-      description="Java 8">
-      <action dev="andrewinkler" type="update" date="2018-03-04">
-        Reference to MASTER-POM version 5. Spring 5.0.3 and Hibernate 5.2.14.
-      </action>
-      <action dev="andrewinkler" type="removed" date="2018-03-31">
-        Removed some dependencies: dom4j, activation and jaxen.
-      </action>
-    </release>
+	<properties>
+		<title>Change Notes</title>
+		<author email="andre.winkler@web.de">Andre Winkler</author>
+	</properties>
+	<body>
+		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
+		<release version="betoffice-pom-1.9.0" date="2019-02-03"
+			description="Dependencies">
+			<action dev="andrewinkler" type="update" date="2019-02-03">
+				Master POM update. Starting with JDK 11. Update to
+				Hibernate 5.4.1.Final and Spring Framework 5.1.5
+			</action>
+		</release>
 
-    <!-- RELEASED -->
-    <release version="betoffice-pom-1.6.0" date="2017-11-24"
-      description="Java 8">
-      <action dev="andrewinkler" type="update" date="2017-11-24">
-        Reference to MASTER-POM version 4.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-pom-1.8.0" date="2018-05-11"
+			description="Dependencies">
+			<action dev="andrewinkler" type="removed" date="2018-04-01">
+				Removed fest assert.
+			</action>
+		</release>
 
-    <release version="betoffice-pom-1.5.0" date="2017-11-14"
-      description="Java 8">
-      <action dev="andrewinkler" type="update" date="2017-04-08">
-        Java 8. Mockito 2.11.0.
-      </action>
-    </release>
-    
-    <!-- RELEAESED -->
-    <release version="betoffice-pom-1.4.0" date="2016-07-26"
-      description="Reactivate site documentation">
-      <action dev="andrewinkler" type="add" date="2016-07-13">
-        Update to awtools master parent POM 1.3. Update to Springframework
-        4 and Hibernate 5.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-pom-1.7.0" date="2018-03-31"
+			description="Java 8">
+			<action dev="andrewinkler" type="update" date="2018-03-04">
+				Reference to MASTER-POM version 5. Spring 5.0.3 and Hibernate 5.2.14.
+			</action>
+			<action dev="andrewinkler" type="removed" date="2018-03-31">
+				Removed some dependencies: dom4j, activation and jaxen.
+			</action>
+		</release>
 
-    <release version="betoffice-pom-1.3.0" date="2015-08-06"
-      description="Reactivate site documentation">
-      <action dev="andrewinkler" type="add" date="2015-01-19">
-        Added project repository settings (Will be moved in the future
-        to a parent POM project).
-      </action>
-      <action dev="andrewinkler" type="remove" date="2014-10-28">
-        Removed the Spring repositories.
-      </action>
-      <action dev="andrewinkler" type="remove" date="2014-10-28">
-        UPDATE: maven-compiler-plugin, maven-ja-plugin.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-pom-1.6.0" date="2017-11-24"
+			description="Java 8">
+			<action dev="andrewinkler" type="update" date="2017-11-24">
+				Reference to MASTER-POM version 4.
+			</action>
+		</release>
 
-    <release version="betoffice-pom-1.2.4" date="2014-07-27"
-      description="Update">
-      <action dev="andrewinkler" type="remove" date="2014-07-27">
-        Removed unitils dependency.
-      </action>
-    </release>
+		<release version="betoffice-pom-1.5.0" date="2017-11-14"
+			description="Java 8">
+			<action dev="andrewinkler" type="update" date="2017-04-08">
+				Java 8. Mockito 2.11.0.
+			</action>
+		</release>
 
-    <release version="betoffice-pom-1.2.3" date="2014-01-10"
-      description="Update">
-      <action dev="andrewinkler" type="update" date="2014-01-10">
-        maven-surefire-plugin updated to version 2.16
-      </action>
-    </release>
+		<!-- RELEAESED -->
+		<release version="betoffice-pom-1.4.0" date="2016-07-26"
+			description="Reactivate site documentation">
+			<action dev="andrewinkler" type="add" date="2016-07-13">
+				Update to awtools master parent POM 1.3. Update to Springframework
+				4 and Hibernate 5.
+			</action>
+		</release>
 
-    <release version="betoffice-pom-1.2.1" date="2013-07-27"
-      description="Bugfix">
-      <action dev="andrewinkler" type="add" date="2013-07-27">
-        awtools-basic 1.2.0
-      </action>
-    </release>
-  </body>
-  <footer>
-    <legal>
-      Copyright (c) @year@ The 'betoffice-storage' Project
-      All rights reserved. $Revision: 3748 $ $Date: 2013-06-07 18:00:18 +0200 (Fri, 07 Jun 2013) $
-    </legal>
-  </footer>
+		<release version="betoffice-pom-1.3.0" date="2015-08-06"
+			description="Reactivate site documentation">
+			<action dev="andrewinkler" type="add" date="2015-01-19">
+				Added project repository settings (Will be moved in the future
+				to a parent POM project).
+			</action>
+			<action dev="andrewinkler" type="remove" date="2014-10-28">
+				Removed the Spring repositories.
+			</action>
+			<action dev="andrewinkler" type="remove" date="2014-10-28">
+				UPDATE: maven-compiler-plugin, maven-ja-plugin.
+			</action>
+		</release>
+
+		<release version="betoffice-pom-1.2.4" date="2014-07-27"
+			description="Update">
+			<action dev="andrewinkler" type="remove" date="2014-07-27">
+				Removed unitils dependency.
+			</action>
+		</release>
+
+		<release version="betoffice-pom-1.2.3" date="2014-01-10"
+			description="Update">
+			<action dev="andrewinkler" type="update" date="2014-01-10">
+				maven-surefire-plugin updated to version 2.16
+			</action>
+		</release>
+
+		<release version="betoffice-pom-1.2.1" date="2013-07-27"
+			description="Bugfix">
+			<action dev="andrewinkler" type="add" date="2013-07-27">
+				awtools-basic 1.2.0
+			</action>
+		</release>
+	</body>
+	<footer>
+		<legal>
+			Copyright (c) @year@ The 'betoffice-storage' Project
+			All rights reserved. $Revision: 3748 $ $Date: 2013-06-07 18:00:18 +0200
+			(Fri, 07 Jun 2013) $
+		</legal>
+	</footer>
 </document>
