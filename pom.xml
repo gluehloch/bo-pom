@@ -13,7 +13,7 @@
 
   <groupId>de.winkler.betoffice</groupId>
   <artifactId>betoffice-maven-parent</artifactId>
-  <version>1.9.0-java10</version>
+  <version>1.9.0-java11</version>
 
   <name>Betoffice Parent POM</name>
   <packaging>pom</packaging>
