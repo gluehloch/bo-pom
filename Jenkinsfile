@@ -22,6 +22,8 @@ pipeline {
                 sh 'java -version'
                 sh 'javac -version'
                 sh 'mvn clean install'
+                sh 'echo ${user.home}'
+
                 sshagent(credentials: ['maven.gluehloch.de']) {
                     sh 'scp gluehloch@maven.gluehloch.de:~/tmp/test.txt .'                                         
                     sh 'mvn --settings /var/jenkins_home/.m2/settings.xml deploy'
