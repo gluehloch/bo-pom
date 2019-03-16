@@ -34,13 +34,6 @@ pipeline {
                 // sh 'npm install @angular/cli@latest'
                 // sh 'npm run ng -- build'
             }
-            /*
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
-            }
-            */           
         }
         stage('Test') { 
             steps {
