@@ -17,7 +17,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Start build...'
-                sh "echo $USER"
+                sh "echo ${USER}"
                 echo '''
                     echo "$PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}
