@@ -17,11 +17,6 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Start build...'
-                sh "echo ${USER}"
-                echo '''
-                    echo "$PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}
-                '''
                 sh 'node  -v'
                 sh 'npm -v'
                 sh 'java -version'
