@@ -220,7 +220,7 @@
 
   <repositories>
     <repository>
-      <id>betoffice-repository</id>
+      <id>gluehloch-repository</id>
       <name>Betoffice Repository</name>
       <url>http://maven.gluehloch.de/repository</url>
       <releases>
@@ -231,7 +231,7 @@
       </snapshots>
     </repository>
     <repository>
-      <id>betoffice-snap-repository</id>
+      <id>gluehloch-snap-repository</id>
       <name>Betoffice Snapshot Repository</name>
       <url>http://maven-snap.gluehloch.de/repository</url>
       <releases>
