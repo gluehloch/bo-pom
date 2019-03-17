@@ -23,10 +23,10 @@ pipeline {
                 sh 'javac -version'
                 sh 'mvn clean install'
 
-                sshagent(credentials: ['maven.gluehloch.de']) {
-                    sh 'scp gluehloch@maven.gluehloch.de:~/tmp/test.txt .'                                         
-                    sh 'mvn --settings /var/jenkins_home/.m2/settings.xml deploy'
-                }
+                sh 'mvn --settings /var/jenkins_home/.m2/settings.xml deploy'
+                //sshagent(credentials: ['maven.gluehloch.de']) {
+                //    sh 'mvn --settings /var/jenkins_home/.m2/settings.xml deploy'
+                //}
 
                 // sh 'npm install'
                 // sh 'npm uninstall @angular/cli'
