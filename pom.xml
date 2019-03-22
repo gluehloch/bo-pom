@@ -8,7 +8,7 @@
   <parent>
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>7-java11-SNAPSHOT</version>
+    <version>7-java11</version>
   </parent>
 
   <groupId>de.winkler.betoffice</groupId>

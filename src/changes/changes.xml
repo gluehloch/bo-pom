@@ -6,7 +6,9 @@
 	</properties>
 	<body>
 		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-		<release version="betoffice-pom-1.9.0" date="2019-02-03"
+
+        <!-- RELEASED -->
+		<release version="betoffice-pom-1.9.0" date="2019-03-22"
 			description="Dependencies">
 			<action dev="andrewinkler" type="update" date="2019-02-03">
 				Master POM update. Starting with JDK 11. Update to
