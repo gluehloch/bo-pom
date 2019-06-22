@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>de.awtools</groupId>
 		<artifactId>master-pom</artifactId>
-		<version>7-java11</version>
+		<version>8-java11</version>
 	</parent>
 
 	<groupId>de.winkler.betoffice</groupId>
@@ -253,7 +253,7 @@
 		<repository>
 			<id>gluehloch-repository</id>
 			<name>Betoffice Repository</name>
-			<url>http://maven.gluehloch.de/repository</url>
+			<url>https://maven.gluehloch.de/repository</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -264,7 +264,7 @@
 		<repository>
 			<id>gluehloch-snap-repository</id>
 			<name>Betoffice Snapshot Repository</name>
-			<url>http://maven-snap.gluehloch.de/repository</url>
+			<url>https://maven-snap.gluehloch.de/repository</url>
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>always</updatePolicy>
