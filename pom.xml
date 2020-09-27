@@ -8,30 +8,26 @@
 	<parent>
 		<groupId>de.awtools</groupId>
 		<artifactId>master-pom</artifactId>
-		<version>8-java11</version>
+		<version>9-java14</version>
 	</parent>
 
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.10.0-java11-SNAPSHOT</version>
+	<version>1.10.0-SNAPSHOT</version>
 
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
 
 	<description>
-    The Maven parent POM definition for all betoffice projects.
-  </description>
+    	The Maven parent POM definition for all betoffice projects.
+	</description>
 
 	<url>http://betoffice.sourceforge.net</url>
 	<inceptionYear>2000</inceptionYear>
 
 	<scm>
-		<connection>
-      scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom
-    </connection>
-		<developerConnection>
-      scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom
-    </developerConnection>
+		<connection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom</connection>
+		<developerConnection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom</developerConnection>
 		<url>https://sourceforge.net/p/betoffice/_list/git</url>
 	</scm>
 
@@ -66,12 +62,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.6.1</version>
+			<version>1.7.30</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.6.1</version>
+			<version>1.7.30</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
@@ -203,19 +199,10 @@
         <!-- Test Dependencies -->
 
         <!-- MySQL Datenbank Treiber -->
-        <!--
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>2.2.6</version>
-            <scope>test</scope>
-        </dependency>
-        -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.31</version>
-            <!-- Produces some problems with the server timezone. <version>6.0.6</version> -->
+            <version>2.6.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
