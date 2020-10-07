@@ -7,7 +7,7 @@
 	<body>
 		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
 
-        <releaase version="betoffice-pom-1.10.0" date="2019-04-xx"
+        <releaase version="betoffice-pom-1.10.0" date="2020-10-07"
             description="Dependencies">
             <action dev="andrewinkler" type="update" date="2019-05-25">
                 Dependency updates. Mocktio 2.27. JUnit 5. AssertJ 5.3.2.
