@@ -13,7 +13,7 @@
 
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.11.0</version>
+	<version>1.11.0-SNAPSHOT</version>
 
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
@@ -111,12 +111,13 @@
 		</dependency>
 
 		<!-- Java 8 and Hibernate 5 needs this -->
-		<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+		<!-- https://mvnrepository.com/artifact/org.javassist/javassist
 		<dependency>
 		    <groupId>org.javassist</groupId>
 		    <artifactId>javassist</artifactId>
 		    <version>3.27.0-GA</version>
 		</dependency>
+		-->
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
 		<dependency>
 		    <groupId>org.aspectj</groupId>
@@ -266,8 +267,8 @@
 	</repositories>
 
 	<properties>
-		<org.springframework.version>5.2.13.RELEASE</org.springframework.version>
-		<org.hibernate.version>5.4.28.Final</org.hibernate.version>
+		<org.springframework.version>5.3.6</org.springframework.version>
+		<org.hibernate.version>5.4.31.Final</org.hibernate.version>
 	</properties>
 
 </project>
