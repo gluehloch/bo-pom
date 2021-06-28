@@ -1,6 +1,14 @@
+# Maven
 target
+
+# Eclipse
 .classpath
 .project
 .settings
+
+# Visual Code
 .vscode
+betoffice-maven-parent.iml
+
+# Misc
 /bin/
