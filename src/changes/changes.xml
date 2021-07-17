@@ -8,7 +8,7 @@
 		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
 
 		<!-- RELEASED -->
-        <release version="betoffice-pom-1.11.0" date="2021-04-16"
+        <release version="betoffice-pom-1.11.0" date="2021-07-17"
             description="Dependencies">
             <action dev="andrewinkler" type="update" date="2021-03-04">
                 Several updates: Master-POM (12-java16), commons-*, small
