@@ -6,7 +6,14 @@
 	</properties>
 	<body>
 		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-
+        <!-- RELEASED -->
+        <release version="betoffice-pom-1.12.0" date="2021-09-25"
+            description="Dependencies">
+            <action dev="andrewinkler" type="update" date="2021-09-25">
+                Spring Data JPA. Just for paging.
+            </action>
+        </release>
+        
 		<!-- RELEASED -->
         <release version="betoffice-pom-1.11.0" date="2021-07-17"
             description="Dependencies">

@@ -13,7 +13,7 @@
 
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.11.0</version>
+	<version>1.12.0</version>
 
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
@@ -132,6 +132,14 @@
 			<version>${org.hibernate.version}</version>
 			<scope>compile</scope>
 		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <!-- TODO Hibernate wird direkt (ohne JPA) verwendet. -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.5.4</version>
+            <scope>compile</scope>
+        </dependency>
 
 		<!-- Springframework. -->
 		<dependency>
