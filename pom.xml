@@ -8,12 +8,12 @@
 	<parent>
 		<groupId>de.awtools</groupId>
 		<artifactId>master-pom</artifactId>
-		<version>12-java16</version>
+		<version>13-java16</version>
 	</parent>
 
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.12.1</version>
+	<version>1.13.0</version>
 
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
@@ -33,8 +33,6 @@
 		<com.fasterxml.jackson.core.jackson-core.version>2.12.3</com.fasterxml.jackson.core.jackson-core.version>
 		<com.fasterxml.jackson.core.jackson-databind.version>2.12.3</com.fasterxml.jackson.core.jackson-databind.version>
 
-		<betoffice.testutils.version>1.1.1</betoffice.testutils.version>
-		<!-- TODO Macht das Sinn, die Versionen hier aufzuzaehlen? Vermutlich nicht. -->
 		<!--
 		<betoffice.storage.version>2.8.1</betoffice.storage.version>
 		<betoffice.openligadb.version>1.6.4</betoffice.openligadb.version>
@@ -71,6 +69,26 @@
 						<version>1.9.2</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-toolchains-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>toolchain</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<toolchains>
+						<jdk>
+							<version>16</version>
+							<vendor>openjdk</vendor>
+						</jdk>
+					</toolchains>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
