@@ -7,6 +7,15 @@
 	<body>
 		<!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
 
+        <release version="betoffice-pom-1.3.0" date="2022-10-17" description="Dependency Updates">
+            <action dev="andrewinkler" type="update" date="2022-10-17">
+                logback update to version 1.4.4
+            </action>
+            <action dev="andrewinkler" type="add" date="2022-06-23" description="">
+                Added Maven tool-chain.
+            </action>
+        </release>
+
 		<!-- RELEASED -->
 		<release version="betoffice-pom-1.12.1" date="2021-12-24"
 				 description="Dependencies">
