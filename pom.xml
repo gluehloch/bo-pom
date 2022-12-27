@@ -13,7 +13,7 @@
 
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.13.0</version>
+	<version>1.13.1</version>
 
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
@@ -238,12 +238,12 @@
         <!-- Test Dependencies -->
 
         <!-- MySQL Datenbank Treiber -->
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>2.6.2</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>3.0.6</version>
+			<scope>test</scope>
+		</dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
