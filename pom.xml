@@ -2,37 +2,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>de.awtools</groupId>
 		<artifactId>master-pom</artifactId>
 		<version>13-java16</version>
 	</parent>
-
 	<groupId>de.winkler.betoffice</groupId>
 	<artifactId>betoffice-maven-parent</artifactId>
-	<version>1.13.1</version>
-
+	<version>1.13.2</version>
 	<name>Betoffice Parent POM</name>
 	<packaging>pom</packaging>
-
 	<description>
     	The Maven parent POM definition for all betoffice projects.
 	</description>
-
 	<url>http://betoffice.sourceforge.net</url>
 	<inceptionYear>2000</inceptionYear>
-
 	<properties>
+		<slf4j.version>2.0.6</slf4j.version>
 		<org.springframework.version>5.3.6</org.springframework.version>
 		<org.hibernate.version>5.4.31.Final</org.hibernate.version>
-
 		<com.fasterxml.jackson.core.jackson-annotations.version>2.12.3</com.fasterxml.jackson.core.jackson-annotations.version>
 		<com.fasterxml.jackson.core.jackson-core.version>2.12.3</com.fasterxml.jackson.core.jackson-core.version>
 		<com.fasterxml.jackson.core.jackson-databind.version>2.12.3</com.fasterxml.jackson.core.jackson-databind.version>
-
 		<!--
 		<betoffice.storage.version>2.8.1</betoffice.storage.version>
 		<betoffice.openligadb.version>1.6.4</betoffice.openligadb.version>
@@ -40,7 +32,6 @@
 		<betoffice.jweb.version>1.3.1</betoffice.jweb.version>
 		-->
 	</properties>
-
 	<!-- TODO Replace with Bitbucket
 	<scm>
 		<connection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-pom</connection>
@@ -48,7 +39,6 @@
 		<url>https://sourceforge.net/p/betoffice/_list/git</url>
 	</scm>
 	-->
-
 	<!-- =================================================================== -->
 	<!-- Build Configuration -->
 	<!-- =================================================================== -->
@@ -92,16 +82,26 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
-		<!-- Logging -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.4.4</version>
-            <scope>test</scope>
-        </dependency>
-
+		<!-- Logging
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.4.4</version>
+			<scope>test</scope>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+	
 		<!-- apache commons -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -139,7 +139,6 @@
 			<version>2.10.10</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<!-- Java 8 and Hibernate 5 needs this -->
 		<!-- https://mvnrepository.com/artifact/org.javassist/javassist
 		<dependency>
@@ -150,11 +149,10 @@
 		-->
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
 		<dependency>
-		    <groupId>org.aspectj</groupId>
-		    <artifactId>aspectjweaver</artifactId>
-		    <version>1.9.6</version>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.6</version>
 		</dependency>
-
 		<!-- Fuer Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -162,15 +160,14 @@
 			<version>${org.hibernate.version}</version>
 			<scope>compile</scope>
 		</dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
-        <!-- TODO Hibernate wird direkt (ohne JPA) verwendet. -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>2.5.4</version>
-            <scope>compile</scope>
-        </dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<!-- TODO Hibernate wird direkt (ohne JPA) verwendet. -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>2.5.4</version>
+			<scope>compile</scope>
+		</dependency>
 		<!-- Springframework. -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -203,14 +200,13 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
-
 		<!-- Testabteilung -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.4.2</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.4.2</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
@@ -234,30 +230,27 @@
 			<artifactId>icu4j</artifactId>
 			<version>54.1.1</version>
 		</dependency>
-		
-        <!-- Test Dependencies -->
-
-        <!-- MySQL Datenbank Treiber -->
+		<!-- Test Dependencies -->
+		<!-- MySQL Datenbank Treiber -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>3.0.6</version>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-dbcp2</artifactId>
-            <version>2.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-            <version>2.6.2</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.6.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+			<version>2.6.2</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-
 	<distributionManagement>
 		<repository>
 			<id>gluehloch-repository</id>
@@ -274,7 +267,6 @@
 			<url>scp://maven.gluehloch.de/var/www/projects.gluehloch/betoffice/pom</url>
 		</site>
 	</distributionManagement>
-
 	<repositories>
 		<repository>
 			<id>gluehloch-repository</id>
@@ -303,5 +295,4 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
 </project>

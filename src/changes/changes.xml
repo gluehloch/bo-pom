@@ -6,13 +6,23 @@
 	</properties>
 	<body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
+        
+        
+        <!-- RELEASED -->
+        <release version="betoffice-pom-1.13.2" date="2022-12-27" description="Dependency Updates">
+            <action dev="andrewinkler" type="update" date="2022-12-27">
+                Mariadb driver update to 3.0.6
+            </action>
+        </release>
 
+		<!-- RELEASED -->
         <release version="betoffice-pom-1.13.1" date="2022-12-27" description="Dependency Updates">
             <action dev="andrewinkler" type="update" date="2022-12-27">
                 Mariadb driver update to 3.0.6
             </action>
         </release>
 
+		<!-- RELEASED -->
         <release version="betoffice-pom-1.13.0" date="2022-10-17" description="Dependency Updates">
             <action dev="andrewinkler" type="update" date="2022-10-17">
                 logback update to version 1.4.4
