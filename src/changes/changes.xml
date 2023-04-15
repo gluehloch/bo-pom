@@ -6,12 +6,12 @@
 	</properties>
 	<body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-        
-        
-        <!-- RELEASED -->
-        <release version="betoffice-pom-1.13.2" date="2022-12-27" description="Dependency Updates">
-            <action dev="andrewinkler" type="update" date="2022-12-27">
-                Mariadb driver update to 3.0.6
+        <release version="betoffice-pom-1.13.2" date="2023-02-20" description="Dependency Update Fix">
+            <action dev="andrewinkler" type="update" date="2023-02-20">
+                Updated slf4j.version to 2.0.6. And added
+            </action>
+            <action dev="andrewinkler" type="update" date="2023-04-15">
+            	Updated Maven Toolchain plugin to 3.1.0
             </action>
         </release>
 
