@@ -74,7 +74,6 @@
 					<toolchains>
 						<jdk>
 							<version>16</version>
-							<vendor>openjdk</vendor>
 						</jdk>
 					</toolchains>
 				</configuration>
