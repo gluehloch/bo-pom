@@ -6,7 +6,9 @@
     </properties>
     <body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-        <release version="betoffice-pom-1.14.0" date="2023-??-??" description="Dependency Update Fix">
+        
+        <!-- RELEASED -->
+        <release version="betoffice-pom-1.14.0" date="2023-12-21" description="Dependency Update Fix">
             <action dev="andrewinkler" type="update" date="2023-09-22">
                 Update to Java 21.
             </action>
@@ -17,7 +19,7 @@
                 Updated Maven Toolchain plugin to 3.1.0
             </action>
             <action dev="andrewinkler" type="update" date="2023-09-14">
-                Updatet spring (6.0.11) and hibernate (6.3.0.Final). 
+                Update spring (6.0.11) and hibernate (6.3.0.Final). 
             </action>
         </release>
 
