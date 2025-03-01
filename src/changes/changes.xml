@@ -8,6 +8,14 @@
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
         
         <!-- RELEASED -->
+        <release version="betoffice-pom-1.14.1" date="2025-03-02" description="Dependency Update Fix">
+            <action dev="andrewinkler" type="update" date="2025-02-03">
+                Using master-pom 15-jdk21. Trying to fix some problems (null parameter) of Spring
+                Method Security (maven-compiler-plugin -parameter and debug on).
+            </action>
+        </release>
+    
+        <!-- RELEASED -->
         <release version="betoffice-pom-1.14.0" date="2023-12-21" description="Dependency Update Fix">
             <action dev="andrewinkler" type="update" date="2023-09-22">
                 Update to Java 21.
