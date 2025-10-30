@@ -6,7 +6,12 @@
     </properties>
     <body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-        
+        <release version="betoffice-pom-1.15.0" date="2025-10-26" description="JDK 25">
+            <action dev="andrewinkler" type="update" date="2025-10-26">
+                Update to master-pom 16-java25.
+            </action>
+        </release>
+
         <!-- RELEASED -->
         <release version="betoffice-pom-1.14.1" date="2025-03-02" description="Dependency Update Fix">
             <action dev="andrewinkler" type="update" date="2025-02-03">

@@ -6,11 +6,11 @@
     <parent>
         <groupId>de.awtools</groupId>
         <artifactId>master-pom</artifactId>
-        <version>15-java21</version>
+        <version>16-java25</version>
     </parent>
     <groupId>de.winkler.betoffice</groupId>
     <artifactId>betoffice-maven-parent</artifactId>
-    <version>1.14.1</version>
+    <version>1.15.0</version>
     <name>Betoffice Parent POM</name>
     <packaging>pom</packaging>
     <description>
