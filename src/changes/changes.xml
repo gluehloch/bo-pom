@@ -6,7 +6,13 @@
     </properties>
     <body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-        
+        <!-- RELEASED -->
+        <release version="betoffice-pom-1.15.1" date="2025-12-22" description="JDK 25">
+            <action dev="andrewinkler" type="fix" date="2025-12-22">
+                maven-compiler-configuration fix: 21 -> 25.
+            </action>
+        </release>
+
         <!-- RELEASED -->
         <release version="betoffice-pom-1.15.0" date="2025-11-08" description="JDK 25">
             <action dev="andrewinkler" type="update" date="2025-10-26">
