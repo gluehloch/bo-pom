@@ -6,10 +6,14 @@
     </properties>
     <body>
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
-        <!-- RELEASED -->
         <release version="betoffice-pom-1.15.1" date="2025-12-22" description="JDK 25">
             <action dev="andrewinkler" type="fix" date="2025-12-22">
                 maven-compiler-configuration fix: 21 -> 25.
+            </action>
+            <action dev="andrewinkler" type="update" date="2025-12-23">
+                Removed joda datetime dependency.
+                Update springframework version from 6.0.12 to 6.2.15.
+                Update spring-data-jpa from 3.1.4 to 3.5.7.
             </action>
         </release>
 
