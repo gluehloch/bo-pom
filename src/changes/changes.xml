@@ -10,6 +10,7 @@
             <action dev="andrewinkler" type="update" date="2026-03-05">
                 Hibernate update from 6.3.1.Final to 7.2.6.Final.
                 Removed the Mariadb driver dependency.
+                Spring 7.0 works with JUnit 5. Spring 7.1 supports JUnit 6.
             </action>
         </release>
 

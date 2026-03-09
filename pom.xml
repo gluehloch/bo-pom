@@ -208,29 +208,45 @@
 		<!-- Testabteilung -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.14.1</version>
+			<artifactId>junit-jupiter-api</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<scope>test</scope>
+		</dependency>
+<dependency>
+  <groupId>org.junit.platform</groupId>
+  <artifactId>junit-platform-engine</artifactId>
+  <scope>test</scope>
+</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${org.springframework.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.assertj</groupId>
-			<artifactId>assertj-core</artifactId>
-			<version>3.24.2</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>5.21.0</version>
-			<scope>test</scope>
-		</dependency>
+<!-- Source: https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core</artifactId>
+    <version>3.27.7</version>
+    <scope>test</scope>
+</dependency>
+<!-- Source: https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>5.22.0</version>
+    <scope>test</scope>
+</dependency>
 
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
@@ -298,7 +314,8 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-annotations</artifactId>
-				<version>${com.fasterxml.jackson.core.jackson-annotations.version}</version>
+				<version>
+					${com.fasterxml.jackson.core.jackson-annotations.version}</version>
 				<scope>compile</scope>
 			</dependency>
 			<dependency>
@@ -317,6 +334,16 @@
 				<artifactId>byte-buddy</artifactId>
 				<version>1.17.7</version>
 			</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.junit/junit-bom -->
+<dependency>
+    <groupId>org.junit</groupId>
+    <artifactId>junit-bom</artifactId>
+    <version>6.0.3</version>
+    <type>pom</type>
+    <scope>import</scope>
+</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 </project>
