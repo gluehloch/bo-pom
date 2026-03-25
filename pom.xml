@@ -24,10 +24,11 @@
         <org.springframework.data.version>4.0.3</org.springframework.data.version>
         <org.hibernate.version>7.2.6.Final</org.hibernate.version>
 
-        <com.fasterxml.jackson.core.jackson-annotations.version>3.0-rc5</com.fasterxml.jackson.core.jackson-annotations.version>
-        <com.fasterxml.jackson.core.jackson-core.version>3.1.0</com.fasterxml.jackson.core.jackson-core.version>
-        <com.fasterxml.jackson.core.jackson-databind.version>3.1.0</com.fasterxml.jackson.core.jackson-databind.version>
-
+<!--
+        <tools.jackson.core.jackson-annotations.version>3.0-rc5</tools.jackson.core.jackson-annotations.version>
+        <tools.jackson.core.jackson-core.version>3.1.0</tools.jackson.core.jackson-core.version>
+        <tools.jackson.core.jackson-databind.version>3.1.0</tools.jackson.core.jackson-databind.version>
+-->
         <!--
 		<betoffice.storage.version>2.8.1</betoffice.storage.version>
         <betoffice.openligadb.version>1.6.4</betoffice.openligadb.version>
@@ -312,28 +313,37 @@
     </repositories>
     <dependencyManagement>
         <dependencies>
+            <!--
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>
-                    ${com.fasterxml.jackson.core.jackson-annotations.version}</version>
+                <version>${tools.jackson.core.jackson-annotations.version}</version>
                 <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>tools.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
-                <version>${com.fasterxml.jackson.core.jackson-core.version}</version>
+                <version>${tools.jackson.core.jackson-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>tools.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${com.fasterxml.jackson.core.jackson-databind.version}</version>
+                <version>${tools.jackson.core.jackson-databind.version}</version>
             </dependency>
+            -->
 
             <dependency>
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
                 <version>1.17.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tools.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>3.1.0</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
