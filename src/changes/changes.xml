@@ -8,7 +8,7 @@
         <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
         <release version="betoffice-pom-1.16.0" date="2026-03-05" description="Hibernate and Spring update">
             <action dev="andrewinkler" type="update" date="2026-03-05">
-                Spring update to 7.0.
+                Spring update to 7.0.5.
                 Hibernate update from 6.3.1.Final to 7.2.6.Final.
                 Removed the Mariadb driver dependency.
             </action>
