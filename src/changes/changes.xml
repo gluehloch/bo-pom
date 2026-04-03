@@ -5,7 +5,7 @@
         <author email="andre.winkler@web.de">Andre Winkler</author>
     </properties>
     <body>
-        <!-- *** STILL UNDER DEVELOPMENT x.x.x (SNAPSHOT) *** -->
+        <!-- RELEASED -->
         <release version="betoffice-pom-1.16.0" date="2026-03-05" description="Spring, Hibernate and other dependency updates">
             <action dev="andrewinkler" type="update" date="2026-03-05">
                 Spring update to 7.0.5.
